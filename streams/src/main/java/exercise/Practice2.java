@@ -2,15 +2,13 @@ package exercise;
 
 import java.util.stream.IntStream;
 
+import org.junit.jupiter.api.Test;
+
 // find persons age less or equal 18 
 // and another method to find first 10 person whose age less than 18
 public class Practice2 {
-	public static void main(String ab[])
-	{
-		Practice2 practice2 = new Practice2();
-		practice2.printInclusiveAndExclusive();
-	}
-	
+
+	@Test
 	public void printInclusiveAndExclusive()
 	{
 		System.out.println("exclusive through range method");
