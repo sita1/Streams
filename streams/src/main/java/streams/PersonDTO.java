@@ -1,6 +1,6 @@
 package streams;
 
-public class Person {
+public class PersonDTO {
 
 	private Integer id;
 	
@@ -34,6 +34,13 @@ public class Person {
 		this.id = id;
 	}
 
+	public PersonDTO(Integer id, String name, Integer age, Integer salary) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.salary = salary;
+	}
+
 	public Integer getSalary() {
 		return salary;
 	}
@@ -41,7 +48,16 @@ public class Person {
 	public void setSalary(Integer salary) {
 		this.salary = salary;
 	}
+
+	@Override
+	public String toString() {
+		return "PersonDTO [id=" + id + ", name=" + name + ", age=" + age + ", salary=" + salary +  "]";
+	}
 	
+	public static PersonDTO map(Person person)
+	{
+		return new PersonDTO(person.getId(), person.getName(), person.getAge(),person.getSalary());
+	}
 	
 	
 }
