@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import com.google.common.collect.ImmutableList;
 
-public class Practice9 {
+public class Practice9 {  
 
 	@Test
 	public void joiningStringWithStream() throws Exception {
