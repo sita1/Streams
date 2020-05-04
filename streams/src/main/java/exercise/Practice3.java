@@ -16,7 +16,7 @@ public class Practice3 {
 		final List<Integer> numbers = ImmutableList.of(1, 5, 2, 3, 4, 7);
 		System.out.println(numbers.stream().min(Comparator.naturalOrder()).get());
 	}
-	
+
 	@Test
 	public void max() throws Exception {
 		final List<Integer> numbers = ImmutableList.of(1, 5, 2, 3, 4, 7);

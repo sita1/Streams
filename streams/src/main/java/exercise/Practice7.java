@@ -18,10 +18,5 @@ public class Practice7 {
 	 groupedData.forEach((name,person)->{System.out.print(name);
 	 person.forEach(System.out::println);});	     
 	}
-	
-
-
-	
-
 
 }

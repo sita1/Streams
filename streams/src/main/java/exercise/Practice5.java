@@ -10,22 +10,19 @@ import streams.Person;
 import streams.PersonDTO;
 
 public class Practice5 {
-	
+
 	@Test
 	public void map() throws Exception {
-	      List<Person> people = MockData.getPeople();
-	     List<PersonDTO> transformtoDtoList =  people.stream().map(PersonDTO :: map).collect(Collectors.toList());
-	     transformtoDtoList.forEach(System.out :: println);
+		List<Person> people = MockData.getPeople();
+		List<PersonDTO> transformtoDtoList = people.stream().map(PersonDTO::map).collect(Collectors.toList());
+		transformtoDtoList.forEach(System.out::println);
 	}
-	
-	
+
 	@Test
 	public void mapToDouble() throws Exception {
-	      List<Person> people = MockData.getPeople();
-	   double avergae =   people.stream().mapToDouble(Person ::getSalary).average().orElse(0);
-	   System.out.println(avergae);
+		List<Person> people = MockData.getPeople();
+		double avergae = people.stream().mapToDouble(Person::getSalary).average().orElse(0);
+		System.out.println(avergae);
 	}
-	
-
 
 }
